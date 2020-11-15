@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(241, 240, 234);
+}
+#title {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 40px;
+}
+.container {
+  height: 400px;
+  width: 600px;
+  margin: auto;
+  margin-top: 0px;
+  border: 2px solid black;
+}
+
+
+
+.square {
+  background-color: #ffffff;
+  float: left;
+  border: 0.2px solid rgb(245, 9, 9);
+  box-sizing: border-box;
+  
+  
+}
+
+.square:hover {
+  background-color: rgb(13, 121, 243,.10);
+ /* transition-delay:0.01s;
+  transition-duration: 0.3s;*/
+}
+
+
+
+
+.content {
+  font-size: 15px;
+  clear: left;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+  .square:hover {
+      background-color: rgb(238, 27, 238);
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+    
+  }
+  .square:hover {
+      background-color: rgb(55, 233, 19);
+    }
+}
+
+button{
+  height: 90px;
+  width: 120px;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  position: absolute;
+}
+#button {
+  padding-left: 100px;
+}

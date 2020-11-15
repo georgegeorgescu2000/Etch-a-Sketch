@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="mystyle2.css">
+        <title>Etch-a-Sketch</title>
+        <h1 id="title">Etch-a-Sketch</h1>
+        
+        <div id="button">
+            <button id="numberGrid" value = "numberGrid">Choose number grid</button>    
+        </div>  
+
+    </head>
+    <body>
+      <div class='container' id = "container">
+
+      </div>
+     
+     <script>
+         
+         function numberGrid(number){
+         const container = document.querySelector('#container');
+         
+         for (let i = 1; i<=number*number; i++){
+            var dimensionsquare = 100/number;
+            const square = document.createElement('div');
+            square.classList.add('square');
+            container.appendChild(square);
+            square.style.height = dimensionsquare+"%";
+            square.style.width = dimensionsquare+"%";
+            const content = document.createElement('div');
+            content.classList.add('content');
+            content.textContent = "";
+            square.appendChild(content);
+         }
+         }
+
+        /* const nrGrid = prompt().toLowerCase();
+         numberGrid(nrGrid);*/
+         
+         
+        const btnnumberGrid = document.querySelector('#numberGrid');
+        btnnumberGrid.addEventListener('click', () => {
+         const nrGrid = prompt('Choose number of grid, less 100');
+         numberGrid(nrGrid);
+         
+        
+        });
+
+
+              
+
+
+     </script>
+        
+
+
+    </body>
+</html>

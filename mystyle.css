@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(245, 234, 187);
+  }
+
+.square {
+    float:left;
+    position: relative;
+    width: 6%;
+    padding-bottom: 6%; /* = width for a 1:1 aspect ratio */
+    margin:auto; /*1.66%*/
+    overflow:hidden;
+    display: inline-block;
+    border: 1px solid #4CAF50;
+    
+}
+.square:hover {
+    background-color: rgb(13, 121, 243);
+  }
+
+.content {
+    position:absolute;
+    height:80%; /* = 100% - 2*10% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 10% 5%;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+    .square:hover {
+        background-color: rgb(238, 27, 238);
+      }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+      
+    }
+    .square:hover {
+        background-color: rgb(55, 233, 19);
+      }
+  }
+
+  button{
+    height: 100px;
+    width: 150px;
+
+}
