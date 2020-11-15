@@ -41,21 +41,21 @@ body {
 
 @media screen and (max-width: 992px) {
   body {
-    background-color: blue;
+    background-color: rgb(205, 249, 252);
   }
   .square:hover {
-      background-color: rgb(238, 27, 238);
+      background-color: rgb(2, 252, 23);
     }
 }
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
   body {
-    background-color: olive;
+    background-color: rgb(247, 247, 133);
     
   }
   .square:hover {
-      background-color: rgb(55, 233, 19);
+      background-color: rgb(19, 23, 233);
     }
 }
 
