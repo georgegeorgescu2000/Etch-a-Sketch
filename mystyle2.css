@@ -21,14 +21,14 @@ body {
   float: left;
   border: 0.2px solid rgb(245, 9, 9);
   box-sizing: border-box;
-  
+  transition: all 3s ease-in-out;   /* Hover off */
   
 }
 
 .square:hover {
   background-color: rgb(13, 121, 243);
- /* transition-delay:0.01s;
-  transition-duration: 0.3s;*/
+  transition: all 0.1s ease-in;         /* On hover */
+  
 }
 
 
